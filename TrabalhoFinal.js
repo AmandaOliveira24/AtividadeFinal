@@ -60,10 +60,10 @@ class SistemaProdutos {
             console.log(`Produto não encontrado!`);
             return;
         }
-        let valor = parseFloat(prompt(`Digite o valor para alterar o preço: `))
+        let valor = parseFloat(prompt(`Digite o valor para alterar o preço(+ para somar - para subtair): `))
         while(isNaN(valor)){
             console.log(`Valor inválido!`);
-            valor = parseFloat(prompt(`Digite o valor para alterar o preço: `));
+            valor = parseFloat(prompt(`Digite o valor para alterar o preço(+ para somar - para subtair): `));
         }
 
         const novoPreco = produto.preco + valor;
